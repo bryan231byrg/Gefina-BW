@@ -1,18 +1,14 @@
 {
     "name": "gefina",
-    "description": "Sistema de gestão de contas a receber.",
+    "description": "Sistema de gestão de cantos a receber.",
     "version": "0.0.0",
     "author": "Alex Bessa",
-    "type": "module",
     "scripts": {
-        "dev": "node --watch ./server.ts",
-        "check": "tsc"
-    },
-    "dependencies": {
-        "express": "^5.2.1"
+        "check": "biome check ./",
+        "fix": "biome check --write ./",
+        "fix:unsafe": "biome check --write --unsafe ./"
     },
     "devDependencies": {
-        "@types/express": "^5.0.6",
-        "typescript": "^7.0.2"
+        "@biomejs/biome": "2.6.2"
     }
 }
